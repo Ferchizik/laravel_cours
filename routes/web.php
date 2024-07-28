@@ -44,7 +44,6 @@ Route::get('/post', [MyPostConrtoller::class, 'index']);
 
 Route::get('post/all', [MyPostConrtoller::class, 'getAll']);
 
-Route::get('/work', [MyWorkController::class, 'index']);
 
 Route::get('/post/create', [MyPostConrtoller::class, 'create']);
 
@@ -55,3 +54,14 @@ Route::get('/post/delete', [MyPostConrtoller::class, 'delete']);
 Route::get('/post/first_or_create', [MyPostConrtoller::class, 'firstOrCreate']);
 
 Route::get('/post/update_or_create', [MyPostConrtoller::class, 'updateOrCreate']);
+
+Route::get('/цлк/update_or_create', [MyPostConrtoller::class, 'updateOrCreate']);
+
+Route::get('/work', [MyWorkController::class, 'index']);
+
+Route::get('/work/create', [MyWorkController::class, 'create']);
+
+Route::get('/work/delete', [MyWorkController::class, 'delete']);
+
+Route::get('/work/first_or_create', [MyWorkController::class, 'firstOrCreate']);
+

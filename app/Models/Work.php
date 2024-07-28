@@ -10,4 +10,9 @@ class Work extends Model
     use HasFactory;
 
     protected $table = 'works';
+
+    protected $fillable = [
+        'name',
+        'level',
+    ];
 }
